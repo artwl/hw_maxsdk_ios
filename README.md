@@ -28,7 +28,3 @@ SDK 下载地址：[v2.0](https://github.com/artwl/hwsdk_ios/releases/tag/V2.0)
 ## 升级到2.0
 
 待补充
-
-## License
-
-The MoPub SDK License can be found at [http://www.mopub.com/legal/sdk-license-agreement/](http://www.mopub.com/legal/sdk-license-agreement/).
