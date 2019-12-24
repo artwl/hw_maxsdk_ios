@@ -4,11 +4,11 @@
 
 ## 下载地址
 
-[v2.0](https://github.com/artwl/hwsdk_ios/releases/tag/V2.0)
+SDK 下载地址：[v2.0](https://github.com/artwl/hwsdk_ios/releases/tag/V2.0)
 
 ## 接入文档
 
-[接入文档](https://github.com/artwl/hwsdk_ios/wiki/%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3)
+[SDK接入文档](https://github.com/artwl/hwsdk_ios/wiki/%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3)
 
 ## 需要帮助？
 
