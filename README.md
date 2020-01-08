@@ -1,10 +1,10 @@
 # HWSDK IOS 
 
-本文档是IOS版变现SDK，当前版本 `V2.2`
+本文档是IOS版变现SDK，当前版本 `V2.3`
 
 ## 下载地址
 
-SDK 下载地址：[v2.2](https://github.com/artwl/hwsdk_ios/releases/tag/V2.2)
+SDK 下载地址：[v2.3](https://github.com/artwl/hwsdk_ios/releases/tag/V2.3)
 
 ## 接入文档
 
@@ -14,9 +14,12 @@ SDK 下载地址：[v2.2](https://github.com/artwl/hwsdk_ios/releases/tag/V2.2)
 
 请先查看接入文档和常见问题，还有问题可联系对接人寻求技术支持
 
-## 本版特性 (2.2 - 2019年12月)
+## 本版特性 (2.3 - 2020年1月)
 
 详细内容请查看更新记录，有完整的更新内容列表。
+
+- **2.3 新特性**
+  - 升级sdk，修改了2个接口，初始接口，仅仅需要传项目id的数字就行了
 
 - **2.2 新特性**
   - 升级一家sdk，修复内部打点方式的bug
