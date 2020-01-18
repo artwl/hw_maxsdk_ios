@@ -1,10 +1,10 @@
 # HWSDK IOS 
 
-本文档是IOS版变现SDK，当前版本 `V2.4`
+本文档是IOS版变现SDK，当前版本 `V2.5`
 
 ## 下载地址
 
-SDK 下载地址：[v2.4](https://github.com/artwl/hwsdk_ios/releases/tag/V2.4)
+SDK 下载地址：[v2.5](https://github.com/artwl/hwsdk_ios/releases/tag/V2.5)
 
 ## 接入文档
 
@@ -17,6 +17,9 @@ SDK 下载地址：[v2.4](https://github.com/artwl/hwsdk_ios/releases/tag/V2.4)
 ## 本版特性 (2.4 - 2020年1月)
 
 详细内容请查看更新记录，有完整的更新内容列表。
+
+- **2.5 新特性**
+  - 支持banner的接口，有banner的最好用这个版本
 
 - **2.4 新特性**
   - 升级sdk，修复无网络进入时，卡主的bug
