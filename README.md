@@ -18,7 +18,7 @@ SDK 下载地址：[v2.6](https://github.com/artwl/hwsdk_ios/releases/tag/V2.6)
 
 详细内容请查看更新记录，有完整的更新内容列表。
 - **2.6 新特性（2020年1月19号）**
-  - 支持banner的接口，有banner的最好用这个版本
+  - 添加插屏回调的接口，目前暴露了显示，关闭的回调
 
 - **2.5 新特性**
   - 支持banner的接口，有banner的最好用这个版本
