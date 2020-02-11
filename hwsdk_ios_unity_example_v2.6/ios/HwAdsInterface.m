@@ -59,49 +59,67 @@ static HwAdsInterface *hwAdsInterfaceInstance;
     NSLog(@"call hwAdsRewardedVideoPlayFail");
 }
 
-@end
 
+#pragma mark HwAdsDelegate
+//插屏播放
+- (void)hwAdsInterstitialShow{
+    NSLog(@"call hwAdsInterstitialShow");
+}
+//插屏关闭
+- (void)hwAdsInterstitialClose{
+     NSLog(@"call hwAdsInterstitialClose");
+}
 
-void initHwSDK(char * serverURL){
+-(void) initHwSDK:(NSString *) serverURL
+{
     NSLog(@"initHwSDK");
     HwAdsInterface* hwAdsInterface = [HwAdsInterface sharedInstance];
     
-    [[HwAds instance] initSDK:[NSString stringWithUTF8String:serverURL]];
+    [[HwAds instance] initSDK:[serverURL intValue]];
     HwAds* hwads = [HwAds instance];
     hwads.hwAdsDelegate = hwAdsInterface;
 }
 
-void loadHwInterAd(){
+-(void) loadHwInterAd
+{
     NSLog(@"call loadInterAd");
     [[HwAds instance] loadInter];
 }
 
-void showHwInterAd(){
+-(void) showHwInterAd
+{
     NSLog(@"call ShowInterAd");
     [[HwAds instance] showInter];
 }
 
-BOOL isHwInterAdLoaded(){
+-(BOOL) isHwInterAdLoaded
+{
     NSLog(@"call isInterLoaded");
     return [[HwAds instance] isInterLoad];
 }
 
-void loadHwRewardAd(){
+-(void) loadHwRewardAd
+{
     NSLog(@"call loadRewardedVideo");
     [[HwAds instance] loadReward];
 }
 
-void showHwRewardAd(char * tag){
+-(void) showHwRewardAd:(NSString *) tag
+{
     NSLog(@"call showRewardedVideo");
-    [[HwAds instance] showReward:[NSString stringWithUTF8String:tag]];
+    [[HwAds instance] showReward:tag];
 }
 
-BOOL isHwRewardAdLoaded(){
+-(BOOL) isHwRewardAdLoaded
+{
     NSLog(@"call isRewardLoaded");
     return [[HwAds instance] isReward];
 }
 
-void hwFbEvent(char * category, char * action, char * label){
+-(void) hwFbEvent:(NSString *) category action:(NSString *) action label:(NSString *) label
+{
     NSLog(@"call hwFbEvent");
-    [[HwAds instance] hwFbEvent:[NSString stringWithUTF8String:category] action:[NSString stringWithUTF8String:action]label:[NSString stringWithUTF8String:label]];
+    [[HwAds instance] hwFbEvent:category action:action label:label];
 }
+
+@end
