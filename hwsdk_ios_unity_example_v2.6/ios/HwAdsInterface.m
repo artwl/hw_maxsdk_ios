@@ -2,7 +2,8 @@
 //  HwAdsInterface.m
 //  Unity-iPhone
 //
-//  Created by game team on 2019/11/15.
+//  Created by game team on 2020/02/14.
+//  添加ga初始化示例代码
 //
 
 #import <Foundation/Foundation.h>
@@ -72,12 +73,21 @@ static HwAdsInterface *hwAdsInterfaceInstance;
 
 -(void) initHwSDK:(NSString *) serverURL
 {
+    //ga初始化 示例代码，需要修改gamekey，secret 两个值
+    //    NSLog(@"initHwSDK GameAnalytics");
+    //    [GameAnalytics configureBuild:@"alpha 0.9.9"];
+    //    [GameAnalytics configureAutoDetectAppVersion:YES];
+    //    [GameAnalytics initializeWithGameKey:@"abff94d0ed3f2bc347f5c300133ae92f" gameSecret:@"bc84129b62b64c24418e6755515f1c005604d531"];
+    
     NSLog(@"initHwSDK");
     HwAdsInterface* hwAdsInterface = [HwAdsInterface sharedInstance];
     
     [[HwAds instance] initSDK:[serverURL intValue]];
     HwAds* hwads = [HwAds instance];
+    //激励注册回调
     hwads.hwAdsDelegate = hwAdsInterface;
+    //插屏注册回调
+    hwads.hwAdsInterDelegate = hwAdsInterface;
 }
 
 -(void) loadHwInterAd

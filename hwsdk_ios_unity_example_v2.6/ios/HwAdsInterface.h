@@ -27,6 +27,7 @@
 - (void)loadHwRewardAd;
 - (void)showHwRewardAd:(NSString *)tag;
 - (BOOL)isHwRewardAdLoaded;
+//faceboook 打点非必须
 - (void)hwFbEvent:(NSString *)category
            action:(NSString *)action
             label:(NSString *)label;
