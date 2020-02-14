@@ -71,7 +71,7 @@ static HwAdsInterface *hwAdsInterfaceInstance;
      NSLog(@"call hwAdsInterstitialClose");
 }
 
--(void) initHwSDK:(NSString *) serverURL
+-(void) initHwSDK:(char *) serverURL
 {
     //ga初始化 示例代码，需要修改gamekey，secret 两个值
     //    NSLog(@"initHwSDK GameAnalytics");
@@ -82,7 +82,9 @@ static HwAdsInterface *hwAdsInterfaceInstance;
     NSLog(@"initHwSDK");
     HwAdsInterface* hwAdsInterface = [HwAdsInterface sharedInstance];
     
-    [[HwAds instance] initSDK:[serverURL intValue]];
+    NSString *serverString = [NSString stringWithFormat:@"%s",serverURL];
+    int projectID = [serverString intValue];
+    [[HwAds instance] initSDK:[serverURL projectID]];
     HwAds* hwads = [HwAds instance];
     //激励注册回调
     hwads.hwAdsDelegate = hwAdsInterface;

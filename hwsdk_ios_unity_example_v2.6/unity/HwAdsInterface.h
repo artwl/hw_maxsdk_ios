@@ -20,12 +20,12 @@
 
 +(id) sharedInstance;
 
-- (void)initHwSDK:(NSString *)serverURL;
+- (void)initHwSDK:(char *)serverURL;
 - (void)loadHwInterAd;
 - (void)showHwInterAd;
 - (BOOL)isHwInterAdLoaded;
 - (void)loadHwRewardAd;
-- (void)showHwRewardAd:(NSString *)tag;
+- (void)showHwRewardAd:(char *)tag;
 - (BOOL)isHwRewardAdLoaded;
 //faceboook 打点非必须
 - (void)hwFbEvent:(NSString *)category
