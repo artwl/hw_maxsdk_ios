@@ -1,10 +1,10 @@
 # HWSDK IOS 
 
-本文档是IOS版变现SDK，当前版本 `V2.7`
+本文档是IOS版变现SDK，当前版本 `V3.0`
 
 ## 下载地址
 
-SDK 下载地址：[v2.7](https://github.com/artwl/hwsdk_ios/releases/tag/V2.7)
+SDK 下载地址：[v2.7](https://github.com/artwl/hwsdk_ios/releases/tag/V3.0)
 
 ## 接入文档
 
@@ -14,9 +14,12 @@ SDK 下载地址：[v2.7](https://github.com/artwl/hwsdk_ios/releases/tag/V2.7)
 
 请先查看接入文档和常见问题，还有问题可联系对接人寻求技术支持
 
-## 本版特性 (2.7 - 2020年3月)
+## 本版特性 (3.0 - 2020年3月)
 
 详细内容请查看更新记录，有完整的更新内容列表。
+- **3.0 新特性（2020年3月12号）**
+  - 添加插屏，激励回调；当广告缓存时间过长，播放该广告会触发播放失败当回调
+
 - **2.7 新特性（2020年3月5号）**
   - 添加激励显示接口；添加推广人员需要打点的api；优化sdk内部变现打点
 
