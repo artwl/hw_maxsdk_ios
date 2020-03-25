@@ -4,7 +4,7 @@
 
 ## 下载地址
 
-SDK 下载地址：[v3.1](https://github.com/artwl/hwsdk_ios/releases/tag/V3.1)
+SDK 下载地址：[v3.1](https://github.com/artwl/hwsdk_ios/releases/tag/V3.2)
 
 ## 接入文档
 
@@ -17,6 +17,9 @@ SDK 下载地址：[v3.1](https://github.com/artwl/hwsdk_ios/releases/tag/V3.1)
 ## 本版特性 (3.1 - 2020年3月)
 
 详细内容请查看更新记录，有完整的更新内容列表。
+- **3.2 新特性（2020年3月25号）**
+ - 新增加一家追踪平台
+  
 - **3.1 新特性（2020年3月17号）**
   - 添加banner是否加载的接口，添加banner加载成功的回调；当激励视频播放失败，抛这个回调 hwAdsRewardedVideoPlayFail，不给奖励恢复游戏逻辑
   
