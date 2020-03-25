@@ -1,10 +1,10 @@
 # HWSDK IOS 
 
-本文档是IOS版变现SDK，当前版本 `V3.1`
+本文档是IOS版变现SDK，当前版本 `V3.2`
 
 ## 下载地址
 
-SDK 下载地址：[v3.1](https://github.com/artwl/hwsdk_ios/releases/tag/V3.2)
+SDK 下载地址：[v3.2](https://github.com/artwl/hwsdk_ios/releases/tag/V3.2)
 
 ## 接入文档
 
