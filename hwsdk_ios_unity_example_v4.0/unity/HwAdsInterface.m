@@ -48,7 +48,8 @@ static HwAdsInterface *hwAdsInterfaceInstance;
 
 //广告关闭
 - (void) hwAdsRewardedVideoClose{
-    NSLog(@"call hwAdsRewardedVideoClose");
+    NSLog(@"call hwAdsRewardedVideoClose  hide banner right now");
+    [[HwAds instance] hideBanner];
 }
 
 //广告点击回调
@@ -86,6 +87,11 @@ static HwAdsInterface *hwAdsInterfaceInstance;
 - (void)hwAdsInterstitialClick{
     NSLog(@"hwAdsInterstitialClick");
 }
+
+#pragma HwAdsBannerDelegate
+- (void)hwAdsBannerLoadSuccess{
+    NSLog(@"call hwAdsBannerLoadSuccess");
+}
 @end
 
 void getCountryCode(){
@@ -113,11 +119,13 @@ void initHwSDK(char * serverURL){
     
     //int projectID = [serverString intValue];
     int projectID = 127;
-    [[HwAds instance] initSDK: projectID];
+    
+    [[HwAds instance] initSDK:projectID hwAppToken:@"3ed8qzs19ygw" hwEventToken:@"1me94d"];
     //关联回调的代码
     HwAds* hwads = [HwAds instance];
     hwads.hwAdsDelegate = hwAdsInterface;
     hwads.hwAdsInterDelegate = hwAdsInterface;
+    hwads.hwAdsBannerDelegate = hwAdsInterface;
 }
 
 void loadHwInterAd(){
@@ -130,7 +138,9 @@ void showHwInterAd(){
     
     //[[HwAds instance] hideBanner];
     
-    [[HwAds instance] showInter];
+    //[[HwAds instance] showInter];
+    
+    [[HwAds instance] hideBanner];
 }
 
 BOOL isHwInterAdLoaded(){
@@ -146,7 +156,10 @@ void loadHwRewardAd(){
 void showHwRewardAd(char * tag){
     NSLog(@"call showRewardedVideo");
     [[HwAds instance] showReward:[NSString stringWithUTF8String:tag]];
-    //[[HwAds instance] showBanner];
+//    if([[HwAds instance] isBannerLoad]){
+//        NSLog(@"call isBannerLoad");
+//         [[HwAds instance] showBanner];
+//    }
 }
 
 BOOL isHwRewardAdLoaded(){

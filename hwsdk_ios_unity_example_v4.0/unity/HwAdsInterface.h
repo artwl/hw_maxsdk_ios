@@ -11,7 +11,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface HwAdsInterface : NSObject<HwAdsDelegate,HWAdsInterDelegate>
+@interface HwAdsInterface : NSObject<HWAdsBannerDelegate,HwAdsDelegate,HWAdsInterDelegate>
 //add
 @property (nonatomic,strong) HwAds *hwAds;
 
