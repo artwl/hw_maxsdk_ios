@@ -1,10 +1,10 @@
 # HWSDK IOS 
 
-本文档是IOS版变现SDK，当前版本 `V4.0`
+本文档是IOS版变现SDK，当前版本 `V4.1`
 
 ## 下载地址
 
-SDK 下载地址：[v4.0](https://github.com/artwl/hwsdk_ios/releases/tag/V4.0)
+SDK 下载地址：[v4.1](https://github.com/artwl/hwsdk_ios/releases/tag/V4.1)
 
 ## 接入文档
 
@@ -17,6 +17,10 @@ SDK 下载地址：[v4.0](https://github.com/artwl/hwsdk_ios/releases/tag/V4.0)
 ## 本版特性 (4.0 - 2020年3月)
 
 详细内容请查看更新记录，有完整的更新内容列表。
+- **4.1 新特性（2020年4月5号）**
+ - 1.升级vungle到6.5.4 解决UIWebView的问题
+   2.为了加快服务端拉取数据的速度，将事件分流处理
+ 
 - **4.0 新特性（2020年3月29号）**
  - 删除苹果4月即将禁用的UIWebView，升级对应广告渠道SDK，解决这个问题
  
