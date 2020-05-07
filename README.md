@@ -1,10 +1,10 @@
 # HWSDK IOS 
 
-本文档是IOS版变现SDK，当前版本 `V4.2`
+本文档是IOS版变现SDK，当前版本 `V5.0`
 
 ## 下载地址
 
-SDK 下载地址：[v4.2](https://github.com/artwl/hwsdk_ios/releases/tag/V4.2)
+SDK 下载地址：[v5.0](https://github.com/artwl/hwsdk_ios/releases/tag/V5.0)
 
 ## 接入文档
 
@@ -14,9 +14,13 @@ SDK 下载地址：[v4.2](https://github.com/artwl/hwsdk_ios/releases/tag/V4.2)
 
 请先查看接入文档和常见问题，还有问题可联系对接人寻求技术支持
 
-## 本版特性 (4.2 - 2020年4月)
+## 本版特性 (5.0 - 2020年5月)
 
 详细内容请查看更新记录，有完整的更新内容列表。
+- **5.0 新特性（2020年5月7号）**
+ - 1.支持一家bidding
+ - 2.支持国内本地化渠道
+
 - **4.2 新特性（2020年4月23号）**
  - 1.为了减轻服务端压力，做了小优化；核心代码逻辑没动
 
