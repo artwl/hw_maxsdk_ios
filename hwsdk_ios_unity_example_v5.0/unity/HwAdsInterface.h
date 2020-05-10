@@ -2,7 +2,7 @@
 //  HwAdsInterface_h
 //  Unity-iPhone
 //
-//  Created by game team on 2019/11/15.
+//  Created by game team on 2020/05/10.  V5.0
 //
 
 #ifndef HwAdsInterface_h

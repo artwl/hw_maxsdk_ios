@@ -2,7 +2,7 @@
 //  HwAdsInterface.m
 //  Unity-iPhone
 //
-//  Created by game team on 2019/11/15.
+//  Created by game team on 2020/05/10. V5.0
 //
 
 #import <Foundation/Foundation.h>
@@ -49,7 +49,6 @@ static HwAdsInterface *hwAdsInterfaceInstance;
 //广告关闭
 - (void) hwAdsRewardedVideoClose{
     NSLog(@"call hwAdsRewardedVideoClose  hide banner right now");
-    [[HwAds instance] hideBanner];
 }
 
 //广告点击回调
@@ -120,7 +119,11 @@ void initHwSDK(char * serverURL){
     //int projectID = [serverString intValue];
     int projectID = 127;
     
-    [[HwAds instance] initSDK:projectID hwAppToken:@"3ed8qzs19ygw" hwEventToken:@"1me94d"];
+    [[HwAds instance] initSDK:projectID hwAppToken:@"3ed8qzs19ygw" hwImportantToken:@"1me94d" hwUACToken:@"9s7nms" hwMonetizationToken:@"mrwf3e"];
+    NSLog(@"HwPurchase HwPurchase HwPurchaseHwPurchaseHwPurchaseHwPurchase");
+//    [[HwAds instance] hwAnalyticsEvent:@"HwPurchase" action:@"US" label:@"1.99"];
+    
+    
     //关联回调的代码
     HwAds* hwads = [HwAds instance];
     hwads.hwAdsDelegate = hwAdsInterface;
@@ -135,12 +138,8 @@ void loadHwInterAd(){
 
 void showHwInterAd(){
     NSLog(@"call ShowInterAd 11111111111111");
-    
     //[[HwAds instance] hideBanner];
-    
-    //[[HwAds instance] showInter];
-    
-    [[HwAds instance] hideBanner];
+    [[HwAds instance] showInter];
 }
 
 BOOL isHwInterAdLoaded(){
