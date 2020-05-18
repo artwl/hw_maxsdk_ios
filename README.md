@@ -1,10 +1,10 @@
 # HWSDK IOS 
 
-本文档是IOS版变现SDK，当前版本 `V5.1`
+本文档是IOS版变现SDK，当前版本 `V6.0`
 
 ## 下载地址
 
-SDK 下载地址：[v5.1](https://github.com/artwl/hwsdk_ios/releases/tag/V5.1)
+SDK 下载地址：[v6.0](https://github.com/artwl/hwsdk_ios/releases/tag/V6.0)
 
 ## 接入文档
 
@@ -14,9 +14,12 @@ SDK 下载地址：[v5.1](https://github.com/artwl/hwsdk_ios/releases/tag/V5.1)
 
 请先查看接入文档和常见问题，还有问题可联系对接人寻求技术支持
 
-## 本版特性 (5.0 - 2020年5月)
+## 本版特性 (6.0 - 2020年5月)
 
 详细内容请查看更新记录，有完整的更新内容列表。
+- **6.0 新特性（2020年5月18号）**
+ - 1.彻底解决UIWebView的问题
+ 
 - **5.1 新特性（2020年5月13号）**
  - 1.优化内部计算模型
  - 2.修改在系统为9.0时的一个bug
