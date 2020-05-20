@@ -1,10 +1,10 @@
 # HWSDK IOS 
 
-本文档是IOS版变现SDK，当前版本 `V6.0`
+本文档是IOS版变现SDK，当前版本 `V6.1`
 
 ## 下载地址
 
-SDK 下载地址：[v6.0](https://github.com/artwl/hwsdk_ios/releases/tag/V6.0)
+SDK 下载地址：[v6.1](https://github.com/artwl/hwsdk_ios/releases/tag/V6.1)
 
 ## 接入文档
 
@@ -14,9 +14,12 @@ SDK 下载地址：[v6.0](https://github.com/artwl/hwsdk_ios/releases/tag/V6.0)
 
 请先查看接入文档和常见问题，还有问题可联系对接人寻求技术支持
 
-## 本版特性 (6.0 - 2020年5月)
+## 本版特性 (6.1 - 2020年5月)
 
 详细内容请查看更新记录，有完整的更新内容列表。
+- **6.1 新特性（2020年5月20号）**
+ - 1.修复调用插屏有偶现的bug
+ 
 - **6.0 新特性（2020年5月18号）**
  - 1.彻底解决UIWebView的问题
  
