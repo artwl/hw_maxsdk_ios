@@ -6,6 +6,9 @@
 
 SDK 下载地址：[v6.1](https://github.com/artwl/hwsdk_ios/releases/tag/V6.1)
 
+对于unity 2019开发的游戏，接入sdk，可以参考
+[示例文档](https://github.com/artwl/hwsdk_ios/blob/master/doc/Unity%202019%E6%8E%A5%E5%85%A5iOS%20SDK%E6%AD%A5%E9%AA%A4.docx)
+
 ## 接入文档
 
 接入请参考：[SDK接入文档](https://github.com/artwl/hwsdk_ios/wiki/SDK%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3)
