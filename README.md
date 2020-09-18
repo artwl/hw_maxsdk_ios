@@ -1,6 +1,6 @@
 # HWSDK IOS 
 
-本文档是IOS版变现SDK，当前版本 `V6.2`
+本文档是IOS版变现SDK，当前版本 `V7.0`
 
 ## 下载地址
 
@@ -23,6 +23,7 @@ SDK 下载地址：[v7.0](https://github.com/artwl/hwsdk_ios/releases/tag/V7.0)
 - **7.0 新特性（2020年9月18号）**
  - 1.删除AppsFlyerTracker
  - 2.删除Mintegral广告商和对应的adapter
+ - 3.添加LTV2.0打点方法
  
 - **6.2 新特性（2020年9月2号）**
  - 1.针对unity 2019上传遇到嵌套动态库的问题，升级sdk，解决这个问题
