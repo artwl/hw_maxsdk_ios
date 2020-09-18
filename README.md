@@ -4,22 +4,26 @@
 
 ## 下载地址
 
-SDK 下载地址：[v6.2](https://github.com/artwl/hwsdk_ios/releases/tag/V6.2)
+SDK 下载地址：[v7.0](https://github.com/artwl/hwsdk_ios/releases/tag/V7.0)
 
 对于unity 2019开发的游戏，接入sdk，可以参考
 [示例文档](https://github.com/artwl/hwsdk_ios/blob/master/doc/Unity%202019%E6%8E%A5%E5%85%A5iOS%20SDK%E6%AD%A5%E9%AA%A4.docx)
 
 ## 接入文档
 
-接入请参考：[SDK接入文档](https://github.com/artwl/hwsdk_ios/wiki/SDK%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3)
+接入请参考：[SDK接入文档](https://github.com/artwl/hwsdk_ios/wiki/HwSDK-V7.0%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3)
 
 ## 需要帮助？
 
 请先查看接入文档和常见问题，还有问题可联系对接人寻求技术支持
 
-## 本版特性 (6.2 - 2020年9月)
+## 本版特性 (7.0 - 2020年9月)
 
 详细内容请查看更新记录，有完整的更新内容列表。
+- **7.0 新特性（2020年9月18号）**
+ - 1.删除AppsFlyerTracker
+ - 2.删除Mintegral广告商和对应的adapter
+ 
 - **6.2 新特性（2020年9月2号）**
  - 1.针对unity 2019上传遇到嵌套动态库的问题，升级sdk，解决这个问题
  
