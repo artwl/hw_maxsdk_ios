@@ -1,10 +1,10 @@
 # HWSDK IOS 
 
-本文档是IOS版变现SDK，当前版本 `V7.0`
+本文档是IOS版变现SDK，当前版本 `V7.1`
 
 ## 下载地址
 
-SDK 下载地址：[v7.0](https://github.com/artwl/hwsdk_ios/releases/tag/V7.0)
+SDK 下载地址：[v7.1](https://github.com/artwl/hwsdk_ios/releases/tag/V7.0)
 
 对于unity 2019开发的游戏，接入sdk，可以参考
 [示例文档](https://github.com/artwl/hwsdk_ios/blob/master/doc/Unity%202019%E6%8E%A5%E5%85%A5iOS%20SDK%E6%AD%A5%E9%AA%A4.docx)
@@ -17,9 +17,13 @@ SDK 下载地址：[v7.0](https://github.com/artwl/hwsdk_ios/releases/tag/V7.0)
 
 请先查看接入文档和常见问题，还有问题可联系对接人寻求技术支持
 
-## 本版特性 (7.0 - 2020年9月)
+## 本版特性 (7.1 - 2020年9月)
 
 详细内容请查看更新记录，有完整的更新内容列表。
+
+- **7.0 新特性（2020年9月28号）**
+ - 1.使用Facebook 5.10.1.1最新版本SDK替换5.9.0版本SDK，用于解决新APP无法展示Facebook广告问题。
+ 
 - **7.0 新特性（2020年9月18号）**
  - 1.删除AppsFlyerTracker
  - 2.删除Mintegral广告商和对应的adapter
