@@ -4,7 +4,7 @@
 
 ## 下载地址
 
-SDK 下载地址：[v7.2](https://github.com/artwl/hwsdk_ios/releases/tag/V7.0)
+SDK 下载地址：[v7.2](https://github.com/artwl/hwsdk_ios/releases/tag/V7.2)
 
 对于unity 2019开发的游戏，接入sdk，可以参考
 [示例文档](https://github.com/artwl/hwsdk_ios/blob/master/doc/Unity%202019%E6%8E%A5%E5%85%A5iOS%20SDK%E6%AD%A5%E9%AA%A4.docx)
