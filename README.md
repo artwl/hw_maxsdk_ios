@@ -1,10 +1,10 @@
 # HWSDK IOS 
 
-本文档是IOS版变现SDK，当前版本 `V7.4.3`
+本文档是IOS版变现SDK，当前版本 `V7.4.4`
 
 ## 下载地址
 
-SDK 下载地址：[v7.4.3](https://github.com/artwl/hwsdk_ios/releases/tag/V7.4.3)
+SDK 下载地址：[v7.4.4](https://github.com/artwl/hwsdk_ios/releases/tag/V7.4.4)
 
 对于unity 2019开发的游戏，接入sdk，可以参考
 [示例文档](https://github.com/artwl/hwsdk_ios/blob/master/doc/Unity%202019%E6%8E%A5%E5%85%A5iOS%20SDK%E6%AD%A5%E9%AA%A4.docx)
@@ -17,9 +17,13 @@ SDK 下载地址：[v7.4.3](https://github.com/artwl/hwsdk_ios/releases/tag/V7.4
 
 请先查看接入文档和常见问题，还有问题可联系对接人寻求技术支持
 
-## 本版特性 (7.4.3 - 2020年11月)
+## 本版特性 (7.4.4 - 2020年12月)
 
 详细内容请查看更新记录，有完整的更新内容列表。
+
+- **7.4.4 新特性（2020年12月22号）**
+ - 1.移除广点通SDK，解决部分设备把应用杀进程之后无法启动的问题。
+ - 2.修复Facebook打点方法导致的播放完广告不能连续加载的问题。
 
 - **7.4.3 新特性（2020年11月23号）**
  - 1.新增isFaceBookInter接口
