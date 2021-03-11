@@ -11,7 +11,7 @@ SDK 下载地址：[v7.7.0](https://github.com/artwl/hwsdk_ios/releases/tag/V7.7
 
 ## 接入文档
 
-接入请参考：[SDK接入文档](https://github.com/artwl/hwsdk_ios/wiki/HwSDK-V7.6%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3)
+接入请参考：[SDK接入文档](https://github.com/artwl/hwsdk_ios/wiki/HwSDK-V7.6%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3%EF%BC%88%E9%80%82%E7%94%A8%E4%BA%8E7.6.0%EF%BD%9E7.7.0%EF%BC%89)
 
 ## 需要帮助？
 
