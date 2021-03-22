@@ -1,31 +1,40 @@
 # HWSDK IOS 
 
-本文档是IOS版变现SDK，当前版本 `V7.7.0`
+本文档是IOS版变现SDK，当前版本 `V7.8.1`
 
 ## 下载地址
 
-SDK 下载地址：[v7.7.0](https://github.com/artwl/hwsdk_ios/releases/tag/V7.7.0)
+SDK 下载地址：[v7.8.1](https://github.com/artwl/hwsdk_ios/releases/tag/V7.8.1)
 
 对于unity 2019开发的游戏，接入sdk，可以参考
 [示例文档](https://github.com/artwl/hwsdk_ios/blob/master/doc/Unity%202019%E6%8E%A5%E5%85%A5iOS%20SDK%E6%AD%A5%E9%AA%A4.docx)
 
 ## 接入文档
 
-接入请参考：[SDK接入文档](https://github.com/artwl/hwsdk_ios/wiki/HwSDK-V7.6%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3%EF%BC%88%E9%80%82%E7%94%A8%E4%BA%8E7.6.0%EF%BD%9E7.7.0%EF%BC%89)
+接入请参考：[SDK接入文档](https://github.com/artwl/hwsdk_ios/wiki/HwSDK-V7.7.1%EF%BD%9E7.8.1%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3)
 
 ## 需要帮助？
 
 请先查看接入文档和常见问题，还有问题可联系对接人寻求技术支持
 
-## 本版特性 (7.7.1 - 2021年3月)
+## 本版特性 (7.8.1 - 2021年3月)
 
 详细内容请查看更新记录，有完整的更新内容列表。
-- **7.7.1 新特性（2021年3月4号）（内测中外部项目先不接入。。。）**
+- **7.8.1 新特性（2021年3月18号）**
+ - 1.添加次留的打点方法
+ 
+- **7.8.0 新特性（2021年3月11号）**
+ - 1.升级SDK至最新版本
+ - 2.Facebook6.3.0，Google8.1.0，FB打点9.0.1
+ 
+- **7.7.1 新特性（2021年3月4号）**
  - 1.更新Facebook至6.2.1
  - 2.添加Google的开屏广告
+ 
 - **7.7.0 新特性（2021年2月2号）**
  - 1.更新最新版本SDK（紧急更新FB到6.2.1）
  - 2.把IDFA权限请求从SDK中挪出来，解决提包时候报找不到权限请求代码的问题
+ 
 - **7.6.1 新特性（2021年1月18号）**
  - 1.修改Facebook设置setAdvertiserTrackingEnabled的逻辑
  
