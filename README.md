@@ -1,10 +1,10 @@
 # HWSDK IOS 
 
-本文档是IOS版变现SDK，当前版本 `V7.8.1`
+本文档是IOS版变现SDK，当前版本 `V7.8.3`
 
 ## 下载地址
 
-SDK 下载地址：[v7.8.1](https://github.com/artwl/hwsdk_ios/releases/tag/V7.8.1)
+SDK 下载地址：[v7.8.3](https://github.com/artwl/hwsdk_ios/releases/tag/V7.8.3)
 
 对于unity 2019开发的游戏，接入sdk，可以参考
 [示例文档](https://github.com/artwl/hwsdk_ios/blob/master/doc/Unity%202019%E6%8E%A5%E5%85%A5iOS%20SDK%E6%AD%A5%E9%AA%A4.docx)
@@ -17,9 +17,16 @@ SDK 下载地址：[v7.8.1](https://github.com/artwl/hwsdk_ios/releases/tag/V7.8
 
 请先查看接入文档和常见问题，还有问题可联系对接人寻求技术支持
 
-## 本版特性 (7.8.1 - 2021年3月)
+## 本版特性 (7.8.3 - 2021年4月)
 
 详细内容请查看更新记录，有完整的更新内容列表。
+
+- **7.8.3 新特性（2021年4月10号）**
+ - 1.升级Adjust
+ 
+- **7.8.2 新特性（2021年4月2号）**
+ - 1.开屏广告合并入SDK，并添加控制开关和LTV打点
+ 
 - **7.8.1 新特性（2021年3月18号）**
  - 1.添加次留的打点方法
  
