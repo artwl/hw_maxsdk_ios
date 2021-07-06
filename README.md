@@ -4,25 +4,33 @@
 
 ## 下载地址
 
-SDK 下载地址：[v8.0.1](https://github.com/artwl/hwsdk_ios/releases/tag/V8.0.1)
+SDK 下载地址：[v8.1.0](https://github.com/artwl/hwsdk_ios/releases/tag/V8.1.0)
 
 对于unity 2019开发的游戏，接入sdk，可以参考
 [示例文档](https://github.com/artwl/hwsdk_ios/blob/master/doc/Unity%202019%E6%8E%A5%E5%85%A5iOS%20SDK%E6%AD%A5%E9%AA%A4.docx)
 
 ## 接入文档
 
-接入请参考：[SDK接入文档](https://github.com/artwl/hwsdk_ios/wiki/HwSDK-V8.0.0%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3%EF%BC%88%E9%80%82%E7%94%A8%E4%BA%8E8.0.0-%EF%BD%9E-8.0.1%EF%BC%89)
+接入请参考：[SDK接入文档](https://github.com/artwl/hwsdk_ios/wiki/HwSDK-%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3%EF%BC%88%E9%80%82%E7%94%A8%E4%BA%8EV8.0.2%EF%BD%9E8.1.0%EF%BC%89)
 
 ## 需要帮助？
 
 请先查看接入文档和常见问题，还有问题可联系对接人寻求技术支持
 
-## 本版特性 (8.0.1 - 2021年6月)
+## 本版特性 (8.1.0 - 2021年7月)
 
 详细内容请查看更新记录，有完整的更新内容列表。
+- **8.0.1 新特性（2021年7月6号）**
+ - 1.升级MaxSDK，保持Facebook等SDK最新
+ - 2.把内购金额打入adjust后台
+ - 
+- **8.0.2 新特性（2021年7月1号）**
+ - 1.移除Facebook分析相关代码
+
 - **8.0.1 新特性（2021年6月8号）**
  - 1.添加iOS14.5以上ATT打点
  - 2.Google开屏广告，添加代理方法，用于开发人员开屏打点
+
 
 - **8.0.0 新特性（2021年6月8号）**
  - 1.1.升级MaxSDK至最新，使用Max同意流
