@@ -23,7 +23,7 @@ SDK 下载地址：[v8.1.0](https://github.com/artwl/hwsdk_ios/releases/tag/V8.1
 - **8.1.0 新特性（2021年7月6号）**
  - 1.升级MaxSDK，保持Facebook等SDK最新
  - 2.把内购金额打入adjust后台
- - 
+
 - **8.0.2 新特性（2021年7月1号）**
  - 1.移除Facebook分析相关代码
 
