@@ -119,7 +119,8 @@ void initHwSDK(char * serverURL){
     //int projectID = [serverString intValue];
     int projectID = 127;
     
-    [[HwAds instance] initSDK:projectID hwAppToken:@"3ed8qzs19ygw" hwImportantToken:@"1me94d" hwUACToken:@"9s7nms" hwMonetizationToken:@"mrwf3e"];
+    [[HwAds instance] initSDK:projectID];
+//     [[HwAds instance] initSDK:projectID hwAppToken:@"3ed8qzs19ygw" hwImportantToken:@"1me94d" hwUACToken:@"9s7nms" hwMonetizationToken:@"mrwf3e"];
     NSLog(@"HwPurchase HwPurchase HwPurchaseHwPurchaseHwPurchaseHwPurchase");
 //    [[HwAds instance] hwAnalyticsEvent:@"HwPurchase" action:@"US" label:@"1.99"];
     
