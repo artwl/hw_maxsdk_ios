@@ -1,10 +1,10 @@
 # HWSDK IOS 
 
-本文档是IOS版变现SDK，当前版本 `V8.1.3`
+本文档是IOS版变现SDK，当前版本 `V8.1.4`
 
 ## 下载地址
 
-SDK 下载地址：[v8.1.3](https://github.com/artwl/hwsdk_ios/releases)
+SDK 下载地址：[v8.1.4](https://github.com/artwl/hwsdk_ios/releases)
 
 对于unity 2019开发的游戏，接入sdk，可以参考
 [示例文档](https://github.com/artwl/hwsdk_ios/blob/master/doc/Unity%202019%E6%8E%A5%E5%85%A5iOS%20SDK%E6%AD%A5%E9%AA%A4.docx)
@@ -18,10 +18,13 @@ SDK 下载地址：[v8.1.3](https://github.com/artwl/hwsdk_ios/releases)
 
 请先查看接入文档和常见问题，还有问题可联系对接人寻求技术支持
 
-## 本版特性 (8.1.3 - 2021年11月)
+## 本版特性 (8.1.4 - 2021年12月)
 
 详细内容请查看更新记录，有完整的更新内容列表。
-- **8.1.3 新特性（2021年11月10号）**
+- **8.1.4 新特性（2021年12月23号）**
+  - 1.升级MaxSDK，保持CSJ和FacebookSDK最新
+  
+- **8.1.4 新特性（2021年11月10号）**
   - 1.升级MaxSDK，保持CSJ和FacebookSDK最新
   
 - **8.1.2 新特性（2021年9月2号）**
