@@ -22,7 +22,7 @@ SDK 下载地址：[v8.1.4](https://github.com/artwl/hwsdk_ios/releases)
 
 详细内容请查看更新记录，有完整的更新内容列表。
 - **8.1.4 新特性（2021年12月23号）**
-  - 1.升级MaxSDK，保持CSJ和FacebookSDK最新
+  - 1.更新SDK应对iOS15上线广告平台可能做的修改
   
 - **8.1.4 新特性（2021年11月10号）**
   - 1.升级MaxSDK，保持CSJ和FacebookSDK最新
