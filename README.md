@@ -1,26 +1,29 @@
 # HWSDK IOS 
 
-本文档是IOS版变现SDK，当前版本 `V8.1.4`
+本文档是IOS版变现SDK，当前版本 `V8.1.5`
 
 ## 下载地址
 
-SDK 下载地址：[v8.1.4](https://github.com/artwl/hwsdk_ios/releases)
+SDK 下载地址：[v8.1.5](https://github.com/artwl/hwsdk_ios/releases)
 
 对于unity 2019开发的游戏，接入sdk，可以参考
 [示例文档](https://github.com/artwl/hwsdk_ios/blob/master/doc/Unity%202019%E6%8E%A5%E5%85%A5iOS%20SDK%E6%AD%A5%E9%AA%A4.docx)
 
 ## 接入文档
 
-接入请参考：[SDK接入文档](https://github.com/artwl/hwsdk_ios/wiki/HwSDK-%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3%EF%BC%88%E9%80%82%E7%94%A8%E4%BA%8EV8.0.2%EF%BD%9E8.1.4%EF%BC%89)
+接入请参考：[SDK接入文档](https://github.com/artwl/hwsdk_ios/wiki/HwSDK-%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3%EF%BC%88%E9%80%82%E7%94%A8%E4%BA%8EV8.0.2%EF%BD%9E8.1.5%EF%BC%89)
 
 接入请参考：[SDK接入文档,飞书文档](https://hellowd.feishu.cn/docs/doccnNJCfbJpXYQDSmZUqBviQI3#kyQLa1)
 ## 需要帮助？
 
 请先查看接入文档和常见问题，还有问题可联系对接人寻求技术支持
 
-## 本版特性 (8.1.4 - 2021年12月)
+## 本版特性 (8.1.5 - 2022年1月)
 
 详细内容请查看更新记录，有完整的更新内容列表。
+- **8.1.5 新特性（2021年12月23号）**
+  - 1.更新SDK，添加smatto渠道
+  
 - **8.1.4 新特性（2021年12月23号）**
   - 1.更新SDK应对iOS15上线广告平台可能做的修改
   
