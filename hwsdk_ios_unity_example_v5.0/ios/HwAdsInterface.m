@@ -119,7 +119,8 @@ void initHwSDK(char * serverURL){
     //int projectID = [serverString intValue];
     int projectID = 127;
     
-    [[HwAds instance] initSDK:projectID hwAppToken:@"3ed8qzs19ygw" hwImportantToken:@"1me94d" hwUACToken:@"9s7nms" hwMonetizationToken:@"mrwf3e"];
+    //新版本只需要传一个参数
+    [[HwAds instance] initSDK:projectID];
     NSLog(@"HwPurchase HwPurchase HwPurchaseHwPurchaseHwPurchaseHwPurchase");
 //    [[HwAds instance] hwAnalyticsEvent:@"HwPurchase" action:@"US" label:@"1.99"];
     
@@ -133,7 +134,8 @@ void initHwSDK(char * serverURL){
 
 void loadHwInterAd(){
     NSLog(@"call loadInterAd");
-    [[HwAds instance] loadInter];
+     //新版本不需要调用主动调用加载的方法
+    //[[HwAds instance] loadInter];
 }
 
 void showHwInterAd(){
@@ -149,7 +151,8 @@ BOOL isHwInterAdLoaded(){
 
 void loadHwRewardAd(){
     NSLog(@"call loadRewardedVideo");
-    [[HwAds instance] loadReward];
+    //新版本不需要调用主动调用加载的方法
+    //[[HwAds instance] loadReward];
 }
 
 void showHwRewardAd(char * tag){
