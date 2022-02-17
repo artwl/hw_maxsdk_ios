@@ -24,15 +24,25 @@ SDK 下载地址：[v8.2](https://github.com/artwl/hwsdk_ios/releases)
 
 - **8.2 新特性（2022年2月17号）**
   - 1.目前发现内购的LTV不准确，增加了3个参数，保留旧的打点方式，同时用新的方式均打点；校正内购的LTV打点
-/// 内购完成打点方法，二次验证也在这个方法内包含不需要再进行二次验证
-/// @param number 转换成美元的价格
-/// @param myProductId 商品ID
-/// @param myPurchaseType 商品类型，1是订阅，0是普通商品
-/// @param myOrderId 订单ID
-- (void)hwAnalyticsPurchaseByNumberOfDollars:(NSString *)number
+  
+  /// 内购完成打点方法，二次验证也在这个方法内包含不需要再进行二次验证
+  
+  /// @param number 转换成美元的价格
+  
+  /// @param myProductId 商品ID
+  
+  /// @param myPurchaseType 商品类型，1是订阅，0是普通商品
+  
+  /// @param myOrderId 订单ID
+  
+  (void)hwAnalyticsPurchaseByNumberOfDollars:(NSString *)number
+  
                                    productId:(NSString *)myProductId
+                                   
                                    purchaseType:(NSString *)myPurchaseType
+                                   
                                    orderId:(NSString *)myOrderId;
+  
 
 - **8.1.5 新特性（2021年12月23号）**
   - 1.更新SDK，添加smatto渠道
