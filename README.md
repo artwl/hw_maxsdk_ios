@@ -1,10 +1,10 @@
 # HWSDK IOS 
 
-本文档是IOS版变现SDK，当前版本 `V8.2`
+本文档是IOS版变现SDK，当前版本 `V9.0.1`
 
 ## 下载地址
 
-SDK 下载地址：[v8.2](https://github.com/artwl/hwsdk_ios/releases)
+SDK 下载地址：[v9.0.1](https://github.com/artwl/hwsdk_ios/releases)
 
 对于unity 2019开发的游戏，接入sdk，可以参考
 [示例文档](https://github.com/artwl/hwsdk_ios/blob/master/doc/Unity%202019%E6%8E%A5%E5%85%A5iOS%20SDK%E6%AD%A5%E9%AA%A4.docx)
@@ -18,9 +18,12 @@ SDK 下载地址：[v8.2](https://github.com/artwl/hwsdk_ios/releases)
 
 请先查看接入文档和常见问题，还有问题可联系对接人寻求技术支持
 
-## 本版特性 (8.2 - 2022年2月)
+## 本版特性 (9.0.1 - 2022年3月)
 
 详细内容请查看更新记录，有完整的更新内容列表。
+
+- **9.0.1 新特性（2022年3月10号）**
+1.广告LTV细化，增加时间戳等相关信息；用于更精准的计算LTV
 
 - **8.2 新特性（2022年2月17号）**
   - 1.目前发现内购的LTV不准确，增加了3个参数，保留旧的打点方式，同时用新的方式均打点；校正内购的LTV打点
