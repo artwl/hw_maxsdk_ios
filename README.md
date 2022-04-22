@@ -9,7 +9,7 @@ SDK 下载地址：[v9.1](https://github.com/artwl/hwsdk_ios/releases)
 
 ## 接入文档
 
-接入请参考：[SDK接入文档,飞书文档](https://hellowd.feishu.cn/docs/doccnvPPiqKOYvVUgFEuzaCmtdc)
+接入请参考：[SDK接入文档,飞书文档](https://hellowd.feishu.cn/docs/doccnM0dCN19JMcNyOLTruK80Ud#)
 
 ## 需要帮助？
 
