@@ -1,26 +1,29 @@
 # HWSDK IOS 
 
-本文档是IOS版变现SDK，当前版本 `V9.1`
+本文档是IOS版变现SDK，当前版本 `V9.2.0`
 
 ## 下载地址
 
-SDK 下载地址：[v9.1](https://github.com/artwl/hwsdk_ios/releases)
+SDK 下载地址：[v9.2.0](https://github.com/artwl/hwsdk_ios/releases)
 
-对于unity 2019开发的游戏，接入sdk，可以参考
-[示例文档](https://github.com/artwl/hwsdk_ios/blob/master/doc/Unity%202019%E6%8E%A5%E5%85%A5iOS%20SDK%E6%AD%A5%E9%AA%A4.docx)
 
 ## 接入文档
 
-接入请参考：[SDK接入文档](https://github.com/artwl/hwsdk_ios/wiki/HwSDK-%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3%EF%BC%88%E9%80%82%E7%94%A8%E4%BA%8EV8.0.2%EF%BD%9E8.1.5%EF%BC%89)
+接入请参考：[SDK接入文档,飞书文档](https://hellowd.feishu.cn/docs/doccnM0dCN19JMcNyOLTruK80Ud#)
 
-接入请参考：[SDK接入文档,飞书文档](https://hellowd.feishu.cn/docs/doccnNJCfbJpXYQDSmZUqBviQI3#kyQLa1)
 ## 需要帮助？
 
 请先查看接入文档和常见问题，还有问题可联系对接人寻求技术支持
 
-## 本版特性 (9.1 - 2022年3月)
+## 本版特性 (9.2.0 - 2022年4月)
 
 详细内容请查看更新记录，有完整的更新内容列表。
+
+- **9.2.0 新特性（2022年4月24号）**
+  - 1.内购LTV加上SDK和应用版本号
+  - 2.更新第三方广告SDK和Adjust SDK至新版本
+  - 3.优化SDK代码逻辑，添加日志TAG：HWLog
+  - 4.添加监控网络状态，恢复网络时立即重新加载广告
 
 - **9.1 新特性（2022年3月28号）**
   - 1.内购LTV，加上版本号；
