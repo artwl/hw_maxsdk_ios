@@ -20,7 +20,7 @@ SDK 下载地址：[v9.3.0](https://github.com/artwl/hwsdk_ios/releases)
 详细内容请查看更新记录，有完整的更新内容列表。
 
 - **9.3.0 新特性（2022年6月15号）**
-  - 1.新用户请求服务端失败后SDK会读取本地hw-services.json配置加载广告。
+  - 1.新用户请求服务端失败后SDK会读取本地hw-services.plist配置加载广告。
   - 2.请求间隔时间调整为15秒。
   - 3.服务端参数解析失败时SDK打点hwServiceErrorToken事件到Adjust。
 
