@@ -1,10 +1,10 @@
 # HWSDK IOS 
 
-本文档是IOS版变现SDK，当前版本 `V9.3.0`
+本文档是IOS版变现SDK，当前版本 `V9.3.1`
 
 ## 下载地址
 
-SDK 下载地址：[v9.3.0](https://github.com/artwl/hwsdk_ios/releases)
+SDK 下载地址：[v9.3.1](https://github.com/artwl/hwsdk_ios/releases)
 
 
 ## 接入文档
@@ -15,9 +15,12 @@ SDK 下载地址：[v9.3.0](https://github.com/artwl/hwsdk_ios/releases)
 
 请先查看接入文档和常见问题，还有问题可联系对接人寻求技术支持
 
-## 本版特性 (9.3.0 - 2022年6月)
+## 本版特性 (9.3.1 - 2022年6月)
 
 详细内容请查看更新记录，有完整的更新内容列表。
+
+- **9.3.1 新特性（2022年6月27号）**
+  - 1.优化判断本地缓存的逻辑。
 
 - **9.3.0 新特性（2022年6月15号）**
   - 1.新用户请求服务端失败后SDK会读取本地hw-services.plist配置加载广告。
