@@ -1,10 +1,10 @@
 # HWSDK iOS 
 
-本文档是iOS版变现SDK，当前版本 `V9.4.0`
+本文档是iOS版变现SDK，当前版本 `V9.5.0`
 
 ## 下载地址
 
-SDK 下载地址：[v9.4.0](https://github.com/artwl/hwsdk_ios/releases)
+SDK 下载地址：[v9.5.0](https://github.com/artwl/hwsdk_ios/releases)
 
 
 ## 接入文档
@@ -15,10 +15,14 @@ SDK 下载地址：[v9.4.0](https://github.com/artwl/hwsdk_ios/releases)
 
 请先查看接入文档和常见问题，还有问题可联系对接人寻求技术支持
 
-## 本版特性 (9.4.0 - 2022年7月)
+## 本版特性 (9.5.0 - 2022年8月)
 
 详细内容请查看更新记录，有完整的更新内容列表。
 
+- **9.5.0 新特性（2022年8月24号）**
+  - 1.更新第三方SDK版本
+  - 2.初始化接口添加isFirebase字段，如需要接入Firebase传YES，否则传NO 
+  
 - **9.4.0 新特性（2022年7月27号）**
   - 1.更新第三方SDK版本
   - 2.添加Firebase Crashlytics 
