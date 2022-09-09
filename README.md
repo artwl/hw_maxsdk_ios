@@ -22,6 +22,7 @@ SDK 下载地址：[v9.5.1](https://github.com/artwl/hwsdk_ios/releases)
 - **9.5.1 新特性（2022年9月7号）**
   - 1.添加广告展示时的Firebase打点
   - 2.修改广告打点时机，和Android端保持一致
+  - 3.修改广告渠道名称，和Android端保持一致
   
 - **9.5.0 新特性（2022年8月24号）**
   - 1.更新第三方SDK版本
