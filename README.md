@@ -20,7 +20,7 @@ SDK 下载地址：[v9.7.0](https://github.com/artwl/hwsdk_ios/releases)
 详细内容请查看更新记录，有完整的更新内容列表。
 
 - **9.7.0 新特性（2022年10月11号）**
-  - 1.更新AppLovin版本至11.5.2，更新其他第三方库版本
+  - 1.更新AppLovin版本至11.5.0，更新其他第三方库版本
   - 2.修复 iOS 15.7 -[ALStoreKitProductViewController sceneDisconnected:] 崩溃。 请注意，此崩溃仅在用户退出应用程序时发生，因此用户体验不受影响。
   - 3.新增V1LTV打点，删掉旧的LTV打点
   
