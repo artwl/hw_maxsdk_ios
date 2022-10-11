@@ -1,10 +1,10 @@
 # HWSDK iOS 
 
-本文档是iOS版变现SDK，当前版本 `V9.5.1`
+本文档是iOS版变现SDK，当前版本 `V9.7.0`
 
 ## 下载地址
 
-SDK 下载地址：[v9.5.1](https://github.com/artwl/hwsdk_ios/releases)
+SDK 下载地址：[v9.7.0](https://github.com/artwl/hwsdk_ios/releases)
 
 
 ## 接入文档
@@ -15,10 +15,15 @@ SDK 下载地址：[v9.5.1](https://github.com/artwl/hwsdk_ios/releases)
 
 请先查看接入文档和常见问题，还有问题可联系对接人寻求技术支持
 
-## 本版特性 (9.5.1 - 2022年9月)
+## 本版特性 (9.7.0 - 2022年10月)
 
 详细内容请查看更新记录，有完整的更新内容列表。
 
+- **9.7.0 新特性（2022年10月11号）**
+  - 1.更新AppLovin版本至11.5.2，更新其他第三方库版本
+  - 2.修复 iOS 15.7 -[ALStoreKitProductViewController sceneDisconnected:] 崩溃。 请注意，此崩溃仅在用户退出应用程序时发生，因此用户体验不受影响。
+  - 3.新增V1LTV打点，删掉旧的LTV打点
+  
 - **9.5.1 新特性（2022年9月7号）**
   - 1.添加广告展示时的Firebase打点
   - 2.修改广告打点时机，和Android端保持一致
