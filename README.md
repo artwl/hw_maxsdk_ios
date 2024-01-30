@@ -1,10 +1,10 @@
 # HWSDK iOS 
 
-本文档是iOS版变现SDK，当前版本 `V9.7.0`
+本文档是iOS版变现SDK，当前版本 `V9.7.8`
 
 ## 下载地址
 
-SDK 下载地址：[v9.7.0](https://github.com/artwl/hwsdk_ios/releases)
+SDK 下载地址：[v9.7.8](https://github.com/artwl/hwsdk_ios/releases)
 
 
 ## 接入文档
@@ -15,9 +15,13 @@ SDK 下载地址：[v9.7.0](https://github.com/artwl/hwsdk_ios/releases)
 
 请先查看接入文档和常见问题，还有问题可联系对接人寻求技术支持
 
-## 本版特性 (9.7.0 - 2022年10月)
+## 本版特性 (9.7.8 - 2024年1月)
 
 详细内容请查看更新记录，有完整的更新内容列表。
+
+- **9.7.8 新特性（2024年1月24号）**
+  - 1.更新AppLovin版本至12.1.0，更新其他第三方库版本
+  - 2.支持Google CMP
 
 - **9.7.0 新特性（2022年10月11号）**
   - 1.更新AppLovin版本至11.5.0，更新其他第三方库版本
