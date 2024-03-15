@@ -85,8 +85,8 @@ static HwAdsInterface *hwAdsInterfaceInstance;
 
 }
 //插屏关闭 add 3.0
-- (void)hwAdsInterstitialCloseIsFacebookOrAdmob:(BOOL)isFacebookOrAdmob{
-    NSLog(@"callback-hwAdsInterstitialCloseIsFacebookOrAdmob");
+- (void)hwAdsInterstitialClose{
+    NSLog(@"callback-hwAdsInterstitialClose");
 
 }
 @end
@@ -105,7 +105,7 @@ void initHwSDK(int serverURL){
 
     HwAdsInterface* hwAdsInterface = [HwAdsInterface sharedInstance];
     //新版本只需要传一个参数
-    [[HwAds instance] initSDK:serverURL];
+    [[HwAds instance] initSDK:serverURL isFirebase:YES isABTestOpen:NO];
     //关联回调的代码
     HwAds* hwads = [HwAds instance];
     hwads.hwAdsDelegate = hwAdsInterface;

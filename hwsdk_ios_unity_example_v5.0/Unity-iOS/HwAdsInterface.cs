@@ -107,9 +107,9 @@ public static bool unityIsRewardAdLoaded(){
 }
 
 //关于内购打点的方法调用
-public static void unityAnalyticsPurchase(string dollers,string productId,int purchaseType,string orderId,string purchaseToken ){
+public static void unityAnalyticsPurchase(string dollers,string currency,string productId,int purchaseType,string orderId,string purchaseToken ){
 
-hwAnalyticsPurchase(dollers,productId,purchaseType,orderId,purchaseToken);
+hwAnalyticsPurchase(dollers,currency,productId,purchaseType,orderId,purchaseToken);
 }
 
 //sdk版本号
