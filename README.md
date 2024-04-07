@@ -1,10 +1,10 @@
 # HWSDK iOS 
 
-本文档是iOS版变现SDK，当前版本 `V9.7.9`
+本文档是iOS版变现SDK，当前版本 `V9.8.0`
 
 ## 下载地址
 
-SDK 下载地址：[v9.7.9]([https://github.com/artwl/hwsdk_ios/releases](https://github.com/artwl/hw_maxsdk_ios/releases/tag/V9.7.8))
+SDK 下载地址：[v9.8.0]([https://github.com/artwl/hwsdk_ios/releases](https://github.com/artwl/hw_maxsdk_ios/releases/tag/V9.8.0))
 
 
 ## 接入文档
@@ -15,10 +15,14 @@ SDK 下载地址：[v9.7.9]([https://github.com/artwl/hwsdk_ios/releases](https:
 
 请先查看接入文档和常见问题，还有问题可联系对接人寻求技术支持
 
-## 本版特性 (9.7.9 - 2024年2月)
+## 本版特性 (9.8.0 - 2024年4月)
 
 详细内容请查看更新记录，有完整的更新内容列表。
 
+- **9.8.0 新特性（2024年4月7号）**
+  - 1.更新第三方库版本
+  - 2.支持Privacy Manifest
+    
 - **9.7.9 新特性（2024年2月19号）**
   - 1.更新第三方库版本
   - 2.支持Google DMA
