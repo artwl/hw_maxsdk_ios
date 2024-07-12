@@ -1,10 +1,10 @@
 # HWSDK iOS 
 
-本文档是iOS版变现SDK，当前版本 `V9.8.6`
+本文档是iOS版变现SDK，当前版本 `V9.8.7`
 
 ## 下载地址
 
-SDK 下载地址：[v9.8.6]([https://github.com/artwl/hwsdk_ios/releases](https://github.com/artwl/hw_maxsdk_ios/releases/tag/V9.8.6))
+SDK 下载地址：[v9.8.7]([https://github.com/artwl/hwsdk_ios/releases](https://github.com/artwl/hw_maxsdk_ios/releases/tag/V9.8.7))
 
 
 ## 接入文档
@@ -15,10 +15,14 @@ SDK 下载地址：[v9.8.6]([https://github.com/artwl/hwsdk_ios/releases](https:
 
 请先查看接入文档和常见问题，还有问题可联系对接人寻求技术支持
 
-## 本版特性 (9.8.6 - 2024年6月)
+## 本版特性 (9.8.7 - 2024年7月)
 
 详细内容请查看更新记录，有完整的更新内容列表。
 
+- **9.8.7 新特性（2024年7月12号）**
+  - 1.优化SDK
+  - 2.新增SDK打点
+    
 - **9.8.6 新特性（2024年6月5号）**
   - 1.优化SDK
   - 2.新增SDK打点
