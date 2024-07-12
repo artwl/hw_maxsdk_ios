@@ -21,8 +21,7 @@ SDK 下载地址：[v9.8.7]([https://github.com/artwl/hwsdk_ios/releases](https:
 
 - **9.8.7 新特性（2024年7月12号）**
   - 1.优化SDK
-  - 2.新增SDK打点
-    
+        
 - **9.8.6 新特性（2024年6月5号）**
   - 1.优化SDK
   - 2.新增SDK打点
