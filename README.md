@@ -4,7 +4,7 @@
 
 ## 下载地址
 
-SDK 下载地址：[v9.8.8]([https://github.com/artwl/hwsdk_ios/releases](https://github.com/artwl/hw_maxsdk_ios/releases/tag/V9.8.8))
+SDK 下载地址：[v9.8.8]((https://github.com/artwl/hw_maxsdk_ios/releases/tag/V9.8.8))
 
 
 ## 接入文档
