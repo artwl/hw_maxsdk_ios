@@ -24,7 +24,7 @@ SDK 下载地址：[v9.8.11](https://github.com/artwl/hw_maxsdk_ios/releases/tag
     
 - **9.8.8 新特性（2024年9月14号）**
   - 1.更新第三方库
-  - 2.adjust更新至V5版本，去掉AdjustSigSdk库
+  - 2.adjust更新至V5版本
 
 - **9.8.7 新特性（2024年7月12号）**
   - 1.优化SDK
