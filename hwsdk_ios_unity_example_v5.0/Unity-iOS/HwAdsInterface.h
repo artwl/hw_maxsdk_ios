@@ -1,6 +1,6 @@
 //
 //  HwAdsInterface.h
-//  iOS_SDK_V9.2.0
+//  iOS_SDK_V9.8.13
 //
 //  Created by cuili qi on 2022/4/28.
 //
@@ -30,11 +30,9 @@ void showHwRewardAd(char * tag);
 BOOL isHwRewardAdLoaded();
 
 //内购打点
-void hwAnalyticsPurchase(char * dollers,char *productId,int purchaseType,char * orderId,char *purchaseToken);
+void hwAnalyticsPurchase(char * dollers,char *productId,char *productName,int purchaseType,char * orderId,char *purchaseToken);
 
 //sdk版本号
 char hwSdkVersion();
-//上传日志到SDK后台--传
-void reportLogByID(int serverURL);
 
 #endif

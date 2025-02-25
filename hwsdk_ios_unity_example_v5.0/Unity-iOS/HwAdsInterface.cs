@@ -29,7 +29,7 @@ private static extern void hideHwBannerAd();
 
     //关于内购打点
  [DllImport("__Internal")]
-    private static extern void hwAnalyticsPurchase(string dollers,string productId,int purchaseType,string orderId,string purchaseToken);
+    private static extern void hwAnalyticsPurchase(string dollers,string productId,string productName,int purchaseType,string orderId,string purchaseToken);
     //关于SDK版本号
  [DllImport("__Internal")]
  private static extern string hwSdkVersion();
@@ -107,7 +107,7 @@ public static bool unityIsRewardAdLoaded(){
 }
 
 //关于内购打点的方法调用
-public static void unityAnalyticsPurchase(string dollers,string currency,string productId,int purchaseType,string orderId,string purchaseToken ){
+public static void unityAnalyticsPurchase(string dollers,string currency,string productId,string productName,int purchaseType,string orderId,string purchaseToken ){
 
 hwAnalyticsPurchase(dollers,currency,productId,purchaseType,orderId,purchaseToken);
 }
@@ -115,10 +115,6 @@ hwAnalyticsPurchase(dollers,currency,productId,purchaseType,orderId,purchaseToke
 //sdk版本号
 public static string unitySdkVersion(){
    return hwSdkVersion();
-}
-public static void unityReportLogById(int serverURL){
-    reportLogByID(serverURL);
-    
 }
 
 

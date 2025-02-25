@@ -1,6 +1,6 @@
 //
 //  HwAdsInterface.m
-//  iOS_SDK_V9.2.0
+//  iOS_SDK_V9.8.13
 //
 //  Created by cuili qi on 2022/4/28.
 //
@@ -142,10 +142,10 @@ BOOL isHwRewardAdLoaded(){
 }
 
 //内购打点
-void hwAnalyticsPurchase(char * dollers,char *productId,int purchaseType,char * orderId,char *purchaseToken){
-    
-    [[HwAds instance] hwAnalyticsPurchaseByNumberOfDollars:[NSString stringWithUTF8String:dollers] productId:[NSString stringWithUTF8String:productId] purchaseType:purchaseType orderId:[NSString stringWithUTF8String:orderId] purchaseToken:[NSString stringWithUTF8String:purchaseToken]];
-    
+void hwAnalyticsPurchase(char * dollers,char *productId,char *productName,int purchaseType,char * orderId,char *purchaseToken){
+
+    [[HwAds instance] hwAnalyticsPurchaseByNumberOfDollars:[NSString stringWithUTF8String:dollers] productId:[NSString stringWithUTF8String:productId] productName:[NSString stringWithUTF8String:productName] purchaseType:purchaseType orderId:[NSString stringWithUTF8String:orderId] purchaseToken:[NSString stringWithUTF8String:purchaseToken]];
+
 }
 
 //sdk版本号
@@ -153,10 +153,5 @@ char hwSdkVersion(){
     NSString * version =[[HwAds instance] sdkVersion];
 
     return [version UTF8String];
-}
-//上传日志到SDK后台--传
-void reportLogByID(int serverURL){
-    [[HwAds instance] reportLogByID:serverURL];
-    
 }
 
