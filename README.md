@@ -1,10 +1,10 @@
 # HWSDK iOS 
 
-本文档是iOS版变现SDK，当前版本 `V9.8.15`
+本文档是iOS版变现SDK，当前版本 `V9.8.17`
 
 ## 下载地址
 
-SDK 下载地址：[v9.8.15](https://github.com/artwl/hw_maxsdk_ios/releases/tag/V9.8.15)
+SDK 下载地址：[v9.8.17](https://github.com/artwl/hw_maxsdk_ios/releases/tag/V9.8.17)
 
 
 ## 接入文档
@@ -15,9 +15,13 @@ SDK 下载地址：[v9.8.15](https://github.com/artwl/hw_maxsdk_ios/releases/tag
 
 请先查看接入文档和常见问题，还有问题可联系对接人寻求技术支持
 
-## 本版特性 (9.8.15 - 2025年3月)
+## 本版特性 (9.8.17 - 2025年4月)
 
 详细内容请查看更新记录，有完整的更新内容列表。
+- **9.8.17 新特性（2025年4月14号）**
+  - 1.更新第三方库版本
+  - 2.添加针对GA4的用户意见征求设置
+
 - **9.8.15 新特性（2025年3月10号）**
   - 1.更新第三方库版本
   - 2.添加SDK内打点
