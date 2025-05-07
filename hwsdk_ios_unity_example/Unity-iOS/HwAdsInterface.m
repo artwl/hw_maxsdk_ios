@@ -102,7 +102,7 @@ void getCountryCode(){
 
 
 void initHwSDK(int serverURL){
-
+    NSLog(@"HWLog : %d", serverURL);
     HwAdsInterface* hwAdsInterface = [HwAdsInterface sharedInstance];
     //新版本只需要传一个参数
     [[HwAds instance] initSDK:serverURL isFirebase:YES isABTestOpen:NO];
@@ -142,9 +142,9 @@ BOOL isHwRewardAdLoaded(){
 }
 
 //内购打点
-void hwAnalyticsPurchase(char * dollers,char *productId,char *productName,int purchaseType,char * orderId,char *purchaseToken){
+void hwAnalyticsPurchase(char * dollers,char * currency,char *productId,char *productName,int purchaseType,char * orderId,char *purchaseToken){
 
-    [[HwAds instance] hwAnalyticsPurchaseByNumberOfDollars:[NSString stringWithUTF8String:dollers] productId:[NSString stringWithUTF8String:productId] productName:[NSString stringWithUTF8String:productName] purchaseType:purchaseType orderId:[NSString stringWithUTF8String:orderId] purchaseToken:[NSString stringWithUTF8String:purchaseToken]];
+    [[HwAds instance] hwAnalyticsPurchaseByNumberOfDollars:[NSString stringWithUTF8String:dollers] currency:[NSString stringWithUTF8String:currency] productId:[NSString stringWithUTF8String:productId] productName:[NSString stringWithUTF8String:productName] purchaseType:purchaseType orderId:[NSString stringWithUTF8String:orderId] purchaseToken:[NSString stringWithUTF8String:purchaseToken]];
 
 }
 
