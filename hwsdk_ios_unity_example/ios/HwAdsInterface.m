@@ -120,7 +120,7 @@ void initHwSDK(char * serverURL){
     int projectID = 127;
     
     //新版本只需要传一个参数
-    [[HwAds instance] initSDK:projectID];
+    [[HwAds instance] initSDK:projectID  isFirebase:YES isABTestOpen:NO];
     NSLog(@"HwPurchase HwPurchase HwPurchaseHwPurchaseHwPurchaseHwPurchase");
 //    [[HwAds instance] hwAnalyticsEvent:@"HwPurchase" action:@"US" label:@"1.99"];
     
