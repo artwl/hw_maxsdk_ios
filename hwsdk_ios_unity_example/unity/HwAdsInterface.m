@@ -119,7 +119,7 @@ void initHwSDK(char * serverURL){
     //int projectID = [serverString intValue];
     int projectID = 127;
     
-    [[HwAds instance] initSDK:projectID];
+    [[HwAds instance] initSDK:projectID  isFirebase:YES isABTestOpen:NO];
     NSLog(@"HwPurchase HwPurchase HwPurchaseHwPurchaseHwPurchaseHwPurchase");
     
     //关联回调的代码
