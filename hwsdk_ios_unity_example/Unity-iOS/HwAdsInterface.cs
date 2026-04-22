@@ -33,10 +33,6 @@ private static extern void hideHwBannerAd();
     //关于SDK版本号
  [DllImport("__Internal")]
  private static extern string hwSdkVersion();
- //关于上传日志
-  [DllImport("__Internal")]
-  private static extern void reportLogByID(int serverURL);
-
 
 
 
