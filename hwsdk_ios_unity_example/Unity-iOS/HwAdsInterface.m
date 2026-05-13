@@ -104,7 +104,6 @@ void getCountryCode(){
 void initHwSDK(int serverURL){
     NSLog(@"HWLog : %d", serverURL);
     HwAdsInterface* hwAdsInterface = [HwAdsInterface sharedInstance];
-    //新版本只需要传一个参数
     [[HwAds instance] initSDK:serverURL isFirebase:YES isABTestOpen:NO];
     //关联回调的代码
     HwAds* hwads = [HwAds instance];

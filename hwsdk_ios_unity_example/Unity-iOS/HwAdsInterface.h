@@ -17,7 +17,7 @@
 +(id) sharedInstance;
 @end
 
-void initHwSDK(int serverURL);
+void initHwSDK(int serverURL, BOOL isFirebase, BOOL isABTestOpen);
 //banner
 void showHwBannerAd();
 void hideHwBannerAd();
