@@ -90,8 +90,11 @@ cc.Class({
     initSDK: function() {
         console.log("call HwAdsCocos initSDK:201");
         jsb.reflection.callStaticMethod("HwAdsCocos",
-            "initSDK:",
-            "201");
+            "initSDK:isFirebase:isABTestOpen:isMerge:",
+            "201",
+            "1",
+            "0",
+            "0");
     },
 
     isVideoAdLoaded: function() {

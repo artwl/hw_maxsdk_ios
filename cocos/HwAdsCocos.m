@@ -39,9 +39,14 @@
 
 NSString *const LogTag = @"HWADS_COCOS_DEMO";
 
-+(void)initSDK:(NSNumber *)id{
++(void)initSDK:(NSString *)projectId{
     NSLog(@"%@ initSDK", LogTag);
-    [[HwAdsCocos sharedInstance] _initSDKWithId:id];
+    [[HwAdsCocos sharedInstance] _initSDKWithProjectId:projectId isFirebase:@"1" isABTestOpen:@"0" isMerge:@"0"];
+}
+
++(void)initSDK:(NSString *)projectId isFirebase:(NSString *)isFirebase isABTestOpen:(NSString *)isABTestOpen isMerge:(NSString *)isMerge{
+    NSLog(@"%@ initSDK isFirebase:%@ isABTestOpen:%@ isMerge:%@", LogTag, isFirebase, isABTestOpen, isMerge);
+    [[HwAdsCocos sharedInstance] _initSDKWithProjectId:projectId isFirebase:isFirebase isABTestOpen:isABTestOpen isMerge:isMerge];
 }
 
 +(BOOL)isVideoAdLoaded{
@@ -79,9 +84,9 @@ NSString *const LogTag = @"HWADS_COCOS_DEMO";
     [[HwAdsCocos sharedInstance] _hideBannerAd];
 }
 
--(void)_initSDKWithId:(NSNumber *)id{
+-(void)_initSDKWithProjectId:(NSString *)projectId isFirebase:(NSString *)isFirebase isABTestOpen:(NSString *)isABTestOpen isMerge:(NSString *)isMerge{
     self.hwads = [HwAds instance];
-    [self.hwads initSDK:id];
+    [self.hwads initSDK:[projectId intValue] isFirebase:[isFirebase boolValue] isABTestOpen:[isABTestOpen boolValue] isMerge:[isMerge boolValue]];
     self.hwads.hwAdsDelegate = self;
     self.hwads.hwAdsInterDelegate = self;
     self.hwads.hwAdsBannerDelegate = self;
@@ -155,13 +160,13 @@ NSString *const LogTag = @"HWADS_COCOS_DEMO";
 }
 
 //广告加载失败
-- (void) hwAdsRewardedVideoLoadFail {
-    NSLog(@"%@ video ad load fail", LogTag);
+- (void)hwAdsRewardedVideoLoadFailWithErrorCode:(NSInteger)errorCode {
+    NSLog(@"%@ video ad load fail errorCode:%ld", LogTag, (long)errorCode);
 }
 
 //广告播放失败，不给用户奖励
-- (void)hwAdsRewardedVideoPlayFail {
-    NSLog(@"%@ video ad play fail", LogTag);
+- (void)hwAdsRewardedVideoPlayFailWithErrorCode:(NSInteger)errorCode {
+    NSLog(@"%@ video ad play fail errorCode:%ld", LogTag, (long)errorCode);
 }
 
 #pragma HWAdsInterDelegate
@@ -183,6 +188,9 @@ NSString *const LogTag = @"HWADS_COCOS_DEMO";
 }
 - (void)hwAdsInterstitialClick {
     NSLog(@"%@ inter ad click", LogTag);
+}
+- (void)hwAdsInterstitialFailToShowWithErrorCode:(NSInteger)errorCode {
+    NSLog(@"%@ inter ad fail to show errorCode:%ld", LogTag, (long)errorCode);
 }
 
 #pragma HwAdsBannerDelegate

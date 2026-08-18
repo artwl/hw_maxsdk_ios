@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 public class HwAdsInterface
 {
     [DllImport("__Internal")]
-    private static extern void initHwSDK(int serverURL, bool isFirebase, bool isABTestOpen);
+    private static extern void initHwSDK(int serverURL, bool isFirebase, bool isABTestOpen, bool isMerge);
 
 //关于banner
     [DllImport("__Internal")]
@@ -33,7 +33,7 @@ private static extern void hideHwBannerAd();
     private static extern void hwAnalyticsPurchase(string dollers,string currency,string productId,string productName,int purchaseType,string orderId,string purchaseToken);
     //关于SDK版本号
  [DllImport("__Internal")]
- private static extern string hwSdkVersion();
+ private static extern IntPtr hwSdkVersion();
 
 
 
@@ -44,13 +44,13 @@ private static extern void hideHwBannerAd();
     // public static bool isDebug { get; private set; }
 
 //初始化
-    public static void InitSdk(int serverURL)
+    public static void InitSdk(int serverURL, bool isFirebase = true, bool isABTestOpen = false, bool isMerge = false)
     {
         GameObject hwAdsCallBack = new GameObject("HwAdsCallBack");
         GameObject.DontDestroyOnLoad(hwAdsCallBack);
         hwAdsCallBack.AddComponent<HwAdsCallBack>();
         Debug.Log("unity InitSdk");
-        initHwSDK(serverURL, true, false); 
+        initHwSDK(serverURL, isFirebase, isABTestOpen, isMerge); 
     }
 
 //关于banner
@@ -109,7 +109,8 @@ hwAnalyticsPurchase(dollers,currency,productId,productName,purchaseType,orderId,
 
 //sdk版本号
 public static string unitySdkVersion(){
-   return hwSdkVersion();
+   IntPtr versionPtr = hwSdkVersion();
+   return versionPtr == IntPtr.Zero ? string.Empty : Marshal.PtrToStringAnsi(versionPtr);
 }
 
 

@@ -11,7 +11,7 @@ public class AdMgr : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        string serverUrl = "127";
+        int serverUrl = 127;
 #if UNITY_EDITOR
 
 #else

@@ -12,7 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HwAdsCocos : NSObject<HWAdsBannerDelegate,HwAdsDelegate,HWAdsInterDelegate>
 
-+(void)initSDK:(NSNumber *)id;
++(void)initSDK:(NSString *)projectId;
+
++(void)initSDK:(NSString *)projectId isFirebase:(NSString *)isFirebase isABTestOpen:(NSString *)isABTestOpen isMerge:(NSString *)isMerge;
 
 +(BOOL)isVideoAdLoaded;
 

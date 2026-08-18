@@ -17,7 +17,7 @@
 +(id) sharedInstance;
 @end
 
-void initHwSDK(int serverURL, BOOL isFirebase, BOOL isABTestOpen);
+void initHwSDK(int serverURL, BOOL isFirebase, BOOL isABTestOpen, BOOL isMerge);
 //banner
 void showHwBannerAd();
 void hideHwBannerAd();
@@ -33,6 +33,6 @@ BOOL isHwRewardAdLoaded();
 void hwAnalyticsPurchase(char * dollers,char * currency,char *productId,char *productName,int purchaseType,char * orderId,char *purchaseToken);
 
 //sdk版本号
-char hwSdkVersion();
+const char *hwSdkVersion(void);
 
 #endif

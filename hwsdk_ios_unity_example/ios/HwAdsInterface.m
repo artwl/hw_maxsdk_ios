@@ -57,13 +57,13 @@ static HwAdsInterface *hwAdsInterfaceInstance;
 }
 
 //广告加载失败
-- (void) hwAdsRewardedVideoLoadFail{
-    NSLog(@"call hwAdsRewardedVideoLoadFail");
+- (void) hwAdsRewardedVideoLoadFailWithErrorCode:(NSInteger)errorCode{
+    NSLog(@"call hwAdsRewardedVideoLoadFailWithErrorCode:%ld", (long)errorCode);
 }
 
 //广告播放失败，不给用户奖励
-- (void)hwAdsRewardedVideoPlayFail {
-    NSLog(@"call hwAdsRewardedVideoPlayFail");
+- (void)hwAdsRewardedVideoPlayFailWithErrorCode:(NSInteger)errorCode {
+    NSLog(@"call hwAdsRewardedVideoPlayFailWithErrorCode:%ld", (long)errorCode);
 }
 
 #pragma HWAdsInterDelegate
@@ -86,6 +86,9 @@ static HwAdsInterface *hwAdsInterfaceInstance;
 - (void)hwAdsInterstitialClick{
     NSLog(@"hwAdsInterstitialClick");
 }
+- (void)hwAdsInterstitialFailToShowWithErrorCode:(NSInteger)errorCode{
+    NSLog(@"hwAdsInterstitialFailToShowWithErrorCode:%ld", (long)errorCode);
+}
 
 #pragma HwAdsBannerDelegate
 - (void)hwAdsBannerLoadSuccess{
@@ -104,23 +107,17 @@ void getCountryCode(){
 }
 
 
-void initHwSDK(char * serverURL){
+void initHwSDK(int serverURL, BOOL isFirebase, BOOL isABTestOpen, BOOL isMerge){
 //    NSLog(@"initHwSDK GameAnalytics");
 //    [GameAnalytics configureBuild:@"alpha 0.9.9"];
 //    [GameAnalytics configureAutoDetectAppVersion:YES];
 //    [GameAnalytics initializeWithGameKey:@"abff94d0ed3f2bc347f5c300133ae92f" gameSecret:@"bc84129b62b64c24418e6755515f1c005604d531"];
     
     
-    NSLog(@"initHwSDK == %s",serverURL);
+    NSLog(@"initHwSDK == %d",serverURL);
     HwAdsInterface* hwAdsInterface = [HwAdsInterface sharedInstance];
-    
-    NSString *serverString = [NSString stringWithFormat:@"%s",serverURL];
-    
-    //int projectID = [serverString intValue];
-    int projectID = 127;
-    
-    //新版本只需要传一个参数
-    [[HwAds instance] initSDK:projectID  isFirebase:YES isABTestOpen:NO];
+
+    [[HwAds instance] initSDK:serverURL isFirebase:isFirebase isABTestOpen:isABTestOpen isMerge:isMerge];
     NSLog(@"HwPurchase HwPurchase HwPurchaseHwPurchaseHwPurchaseHwPurchase");
 //    [[HwAds instance] hwAnalyticsEvent:@"HwPurchase" action:@"US" label:@"1.99"];
     
@@ -166,7 +163,7 @@ void showHwRewardAd(char * tag){
 
 BOOL isHwRewardAdLoaded(){
     bool isLoaded = [[HwAds instance] isRewardLoad];
-    NSLog(@"call isRewardLoaded %i",isLoaded?"yes":"no");
+    NSLog(@"call isRewardLoaded %d",isLoaded);
     return [[HwAds instance] isRewardLoad];
 }
 

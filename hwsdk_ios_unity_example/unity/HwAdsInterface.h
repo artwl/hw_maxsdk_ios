@@ -10,6 +10,7 @@
 
 
 #import <Foundation/Foundation.h>
+#import <HwAdsFramework/HwAds.h>
 
 @interface HwAdsInterface : NSObject<HWAdsBannerDelegate,HwAdsDelegate,HWAdsInterDelegate>
 //add
@@ -20,7 +21,7 @@
 @end
 
 
-void initHwSDK(char *serverURL);
+void initHwSDK(int serverURL, BOOL isFirebase, BOOL isABTestOpen, BOOL isMerge);
 void loadHwInterAd();
 void showHwInterAd();
 BOOL isHwInterAdLoaded();
@@ -44,5 +45,4 @@ void hwFbEvent(char * category, char * action, char * label);
 //
 //- (void)initTest;
 //@end
-
 

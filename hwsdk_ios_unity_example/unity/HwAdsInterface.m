@@ -13,6 +13,8 @@
 
 #import "HwAdsInterface.h"
 
+extern void UnitySendMessage(const char *obj, const char *method, const char *msg);
+
 @implementation HwAdsInterface
 
 static HwAdsInterface *hwAdsInterfaceInstance;
@@ -44,6 +46,7 @@ static HwAdsInterface *hwAdsInterfaceInstance;
 //广告播放完成，给用户奖励
 - (void) hwAdsRewardedVideoGiveReward{
     NSLog(@"call hwAdsRewardedVideoGiveReward");
+    UnitySendMessage("HwAdsCallBack", "RewardCallBack", "true");
 }
 
 //广告关闭
@@ -57,13 +60,15 @@ static HwAdsInterface *hwAdsInterfaceInstance;
 }
 
 //广告加载失败
-- (void) hwAdsRewardedVideoLoadFail{
-    NSLog(@"call hwAdsRewardedVideoLoadFail");
+- (void) hwAdsRewardedVideoLoadFailWithErrorCode:(NSInteger)errorCode{
+    NSLog(@"call hwAdsRewardedVideoLoadFailWithErrorCode:%ld", (long)errorCode);
+    UnitySendMessage("HwAdsCallBack", "RewardCallBack", "false");
 }
 
 //广告播放失败，不给用户奖励
-- (void)hwAdsRewardedVideoPlayFail {
-    NSLog(@"call hwAdsRewardedVideoPlayFail");
+- (void)hwAdsRewardedVideoPlayFailWithErrorCode:(NSInteger)errorCode {
+    NSLog(@"call hwAdsRewardedVideoPlayFailWithErrorCode:%ld", (long)errorCode);
+    UnitySendMessage("HwAdsCallBack", "RewardCallBack", "false");
 }
 
 #pragma HWAdsInterDelegate
@@ -74,6 +79,7 @@ static HwAdsInterface *hwAdsInterfaceInstance;
 //插屏关闭
 - (void)hwAdsInterstitialClose{
     NSLog(@"hwAdsInterstitialClose");
+    UnitySendMessage("HwAdsCallBack", "InterCallBack", "true");
 }
 
 //add
@@ -85,6 +91,10 @@ static HwAdsInterface *hwAdsInterfaceInstance;
 }
 - (void)hwAdsInterstitialClick{
     NSLog(@"hwAdsInterstitialClick");
+}
+- (void)hwAdsInterstitialFailToShowWithErrorCode:(NSInteger)errorCode{
+    NSLog(@"hwAdsInterstitialFailToShowWithErrorCode:%ld", (long)errorCode);
+    UnitySendMessage("HwAdsCallBack", "InterCallBack", "false");
 }
 
 #pragma HwAdsBannerDelegate
@@ -104,22 +114,17 @@ void getCountryCode(){
 }
 
 
-void initHwSDK(char * serverURL){
+void initHwSDK(int serverURL, BOOL isFirebase, BOOL isABTestOpen, BOOL isMerge){
 //    NSLog(@"initHwSDK GameAnalytics");
 //    [GameAnalytics configureBuild:@"alpha 0.9.9"];
 //    [GameAnalytics configureAutoDetectAppVersion:YES];
 //    [GameAnalytics initializeWithGameKey:@"abff94d0ed3f2bc347f5c300133ae92f" gameSecret:@"bc84129b62b64c24418e6755515f1c005604d531"];
     
     
-    NSLog(@"initHwSDK == %s",serverURL);
+    NSLog(@"initHwSDK == %d",serverURL);
     HwAdsInterface* hwAdsInterface = [HwAdsInterface sharedInstance];
-    
-    NSString *serverString = [NSString stringWithFormat:@"%s",serverURL];
-    
-    //int projectID = [serverString intValue];
-    int projectID = 127;
-    
-    [[HwAds instance] initSDK:projectID  isFirebase:YES isABTestOpen:NO];
+
+    [[HwAds instance] initSDK:serverURL isFirebase:isFirebase isABTestOpen:isABTestOpen isMerge:isMerge];
     NSLog(@"HwPurchase HwPurchase HwPurchaseHwPurchaseHwPurchaseHwPurchase");
     
     //关联回调的代码
@@ -161,7 +166,7 @@ void showHwRewardAd(char * tag){
 
 BOOL isHwRewardAdLoaded(){
     bool isLoaded = [[HwAds instance] isRewardLoad];
-    NSLog(@"call isRewardLoaded %i",isLoaded?"yes":"no");
+    NSLog(@"call isRewardLoaded %d",isLoaded);
     return [[HwAds instance] isRewardLoad];
 }
 

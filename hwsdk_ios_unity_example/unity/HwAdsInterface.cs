@@ -6,7 +6,7 @@ using HwAds;
 public class HwAdsInterface
 {
     [DllImport("__Internal")]
-    private static extern void initHwSDK(string serverURL);
+    private static extern void initHwSDK(int serverURL, bool isFirebase, bool isABTestOpen, bool isMerge);
     [DllImport("__Internal")]
     private static extern void loadHwInterAd();
     [DllImport("__Internal")]
@@ -27,13 +27,13 @@ public class HwAdsInterface
     public static bool isDebug { get; private set; }
 
 
-    public static void InitSdk(string serverURL)
+    public static void InitSdk(int serverURL, bool isFirebase = true, bool isABTestOpen = false, bool isMerge = false)
     {
         GameObject hwAdsCallBack = new GameObject("HwAdsCallBack");
         GameObject.DontDestroyOnLoad(hwAdsCallBack);
         hwAdsCallBack.AddComponent<HwAdsCallBack>();
         Debug.Log("unity InitSdk");
-        initHwSDK(serverURL);
+        initHwSDK(serverURL, isFirebase, isABTestOpen, isMerge);
 
     }
 

@@ -7,6 +7,8 @@
 
 #import "HwAdsInterface.h"
 
+extern void UnitySendMessage(const char *obj, const char *method, const char *msg);
+
 @implementation HwAdsInterface
 static HwAdsInterface *hwAdsInterfaceInstance;
 + (id) sharedInstance{
@@ -23,13 +25,15 @@ static HwAdsInterface *hwAdsInterfaceInstance;
     NSLog(@"callback-hwAdsRewardedVideoLoadSuccess");
 }
 //加载失败
-- (void)hwAdsRewardedVideoLoadFail{
-    NSLog(@"callback-hwAdsRewardedVideoLoadFail");
+- (void)hwAdsRewardedVideoLoadFailWithErrorCode:(NSInteger)errorCode{
+    NSLog(@"callback-hwAdsRewardedVideoLoadFailWithErrorCode:%ld", (long)errorCode);
+    UnitySendMessage("HwAdsCallBack", "RewardCallBack", "false");
 
 }
 //播放失败，不给奖励
-- (void)hwAdsRewardedVideoPlayFail{
-    NSLog(@"callback-hwAdsRewardedVideoPlayFail");
+- (void)hwAdsRewardedVideoPlayFailWithErrorCode:(NSInteger)errorCode{
+    NSLog(@"callback-hwAdsRewardedVideoPlayFailWithErrorCode:%ld", (long)errorCode);
+    UnitySendMessage("HwAdsCallBack", "RewardCallBack", "false");
 
 }
 //广告展示
@@ -51,11 +55,17 @@ static HwAdsInterface *hwAdsInterfaceInstance;
 - (void)hwAdsRewardedVideoGiveReward
 {
     NSLog(@"callback-hwAdsRewardedVideoGiveReward");
+    UnitySendMessage("HwAdsCallBack", "RewardCallBack", "true");
 
 }
 //广告即将展示，建议在收到这个回调时，暂停游戏；
 - (void)hwAdsRewardedVideoWillAppear{
     NSLog(@"callback-hwAdsRewardedVideoWillAppear");
+
+}
+//获取激励广告收入
+- (void)hwAdsRewardedVideoPayRevenueForAd:(double)revenue{
+    NSLog(@"callback-hwAdsRewardedVideoPayRevenueForAd:%f", revenue);
 
 }
 #pragma MARK--BANNE广告的代理方法
@@ -87,6 +97,18 @@ static HwAdsInterface *hwAdsInterfaceInstance;
 //插屏关闭 add 3.0
 - (void)hwAdsInterstitialClose{
     NSLog(@"callback-hwAdsInterstitialClose");
+    UnitySendMessage("HwAdsCallBack", "InterCallBack", "true");
+
+}
+//插屏展示失败 add 9.5.2
+- (void)hwAdsInterstitialFailToShowWithErrorCode:(NSInteger)errorCode{
+    NSLog(@"callback-hwAdsInterstitialFailToShowWithErrorCode:%ld", (long)errorCode);
+    UnitySendMessage("HwAdsCallBack", "InterCallBack", "false");
+
+}
+//获取插屏广告收入
+- (void)hwAdsInterstitialPayRevenueForAd:(double)revenue{
+    NSLog(@"callback-hwAdsInterstitialPayRevenueForAd:%f", revenue);
 
 }
 @end
@@ -101,10 +123,10 @@ void getCountryCode(){
 }
 
 
-void initHwSDK(int serverURL){
+void initHwSDK(int serverURL, BOOL isFirebase, BOOL isABTestOpen, BOOL isMerge){
     NSLog(@"HWLog : %d", serverURL);
     HwAdsInterface* hwAdsInterface = [HwAdsInterface sharedInstance];
-    [[HwAds instance] initSDK:serverURL isFirebase:YES isABTestOpen:NO];
+    [[HwAds instance] initSDK:serverURL isFirebase:isFirebase isABTestOpen:isABTestOpen isMerge:isMerge];
     //关联回调的代码
     HwAds* hwads = [HwAds instance];
     hwads.hwAdsDelegate = hwAdsInterface;
@@ -148,9 +170,9 @@ void hwAnalyticsPurchase(char * dollers,char * currency,char *productId,char *pr
 }
 
 //sdk版本号
-char hwSdkVersion(){
-    NSString * version =[[HwAds instance] sdkVersion];
+const char *hwSdkVersion(void){
+    static NSString * version = nil;
+    version = [HwAds sdkVersion];
 
     return [version UTF8String];
 }
-
